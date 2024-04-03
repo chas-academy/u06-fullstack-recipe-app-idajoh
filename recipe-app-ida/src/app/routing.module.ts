@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { RecipeAPIComponent } from './recipe-api/recipe-api.component';
-import { RecipeAPIDetailComponent } from './recipe-apidetail/recipe-apidetail.component';
+import { RecipeAPIComponent } from './recipe/recipe.component';
+import { RecipeAPIDetailComponent } from './api-detail/apidetail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 
