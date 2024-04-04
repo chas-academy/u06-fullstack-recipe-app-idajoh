@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { NotFoundComponen
+import { NotFoundComponent } from './not-found/not-found.component';
 import { RecipeAPIComponent } from './recipe/recipe.component';
 import { RecipeAPIDetailComponent } from './api-detail/apidetail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';

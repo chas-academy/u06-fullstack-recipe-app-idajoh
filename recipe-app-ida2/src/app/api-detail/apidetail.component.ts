@@ -1,18 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { RecipeService } from '../recipe/recipe.service';
 
 @Component({
   selector: 'app-recipe-apidetail',
-  templateUrl: './recipe-apidetail.component.html',
-  styleUrls: ['./recipe-apidetail.component.scss']
+  templateUrl: './apidetail.component.html',
+  styleUrls: ['./apidetail.component.css']
 })
 
-export class RecipeAPIDetailComponent {
+export class RecipeAPIDetailComponent implements OnInit {
   recipeId: string | null | undefined;
-
   allRecipes: any;
-
   recipe: any;
 
   constructor(private recipeService: RecipeService, private activatedRoute: ActivatedRoute) { }
@@ -29,7 +27,6 @@ export class RecipeAPIDetailComponent {
 
     this.recipeService.getRecipeById(this.recipeId).subscribe((result: any) => {
       this.allRecipes = result;
-
       let recipeDetails = Object.values(this.allRecipes).map((res: any) => res)
       this.recipe = recipeDetails[0];
     });

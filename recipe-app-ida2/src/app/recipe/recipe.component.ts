@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormsModule } from '@angular/forms';
 import { RecipeService } from './recipe.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-api',
-  templateUrl: './recipe-api.component.html',
-  styleUrls: ['./recipe-api.component.scss'],
+  templateUrl: './recipe.component.html',
+  styleUrls: ['./recipe.component.css'],
   template:
     `<div class="flex w-full flex-wrap">
       <a class="h-auto max-w-full w-60" *ngFor="let recipe of allRecipes; let i = index"

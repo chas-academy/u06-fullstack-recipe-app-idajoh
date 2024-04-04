@@ -27,8 +27,10 @@
 </div>
 
 <div class="flex w-full flex-wrap justify-center">
-  <a class="h-auto max-w-full w-60 m-2" *ngFor="let recipe of allRecipes; let i = index"
-    [routerLink]="['/recipe/', getRecipeIdFromUri(recipe.uri)]" routerLinkActive="active">
+  <a
+   class="h-auto max-w-full w-60 m-2" 
+   *ngFor="let recipe of allRecipes; let i = index"
+    routerLink='/recipe/', getRecipeIdFromUri(recipe.uri) routerLinkActive="active">
     <img class="rounded-lg mx-auto shadow-lg" [src]="recipe.image" [alt]="recipe.label">
     <h2 class="bg-white text-slate-950 rounded-lg p-2 mt-2 shadow-lg hover:bg-purple-900 hover:text-white">{{ recipe.label }}</h2>
   </a>
